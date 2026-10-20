@@ -1,0 +1,41 @@
+{
+  "name": "crumbnod",
+  "version": "0.1.0",
+  "description": "MIT-licensed, dependency-free cookie consent for the web.",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://peternickol.github.io/crumbnod/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peternickol/crumbnod.git"
+  },
+  "main": "./src/index.js",
+  "module": "./src/index.js",
+  "types": "./crumbnod.d.ts",
+  "exports": {
+    ".": {
+      "types": "./crumbnod.d.ts",
+      "default": "./src/index.js"
+    }
+  },
+  "files": [
+    "src",
+    "crumbnod.d.ts",
+    "docs",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "demo": "python3 -m http.server 4175"
+  },
+  "keywords": [
+    "cookie",
+    "consent",
+    "privacy"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  }
+}
